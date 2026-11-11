@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your future at Evergreen University. Explore engineering, computer science, business administration, and law programs.">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>Evergreen University — Knowledge for a changing world</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="university.css">
+  <script src="i18n.js" defer></script><script src="university.js" defer></script>
+</head>
+<body>
+  <header class="uni-header">
+    <div class="uni-container header-layout">
+      <a class="uni-brand" href="index.html"><span class="uni-crest" aria-hidden="true">E</span><span>EVERGREEN<small>UNIVERSITY</small></span></a>
+      <button class="uni-menu-toggle" type="button" aria-expanded="false" aria-controls="uni-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="uni-nav" id="uni-nav" aria-label="Main navigation">
+        <a href="#academics">Academics</a><a href="#about">About</a><a href="#admissions">Admissions</a><a href="#campus">Campus life</a>
+      </nav>
+      <div class="uni-header-actions"><a class="uni-login" href="login.html">Log in</a><a class="uni-button uni-button-gold" href="admission.html">Apply now <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </header>
+  <main>
+    <section class="uni-hero">
+      <div class="uni-container uni-hero-inner">
+        <div class="uni-hero-copy">
+          <div class="uni-kicker"><span></span> A UNIVERSITY FOR WHAT’S NEXT</div>
+          <h1>Find your place<br>in a <em>changing world.</em></h1>
+          <p>Think boldly. Learn deeply. Make a difference. Your next chapter begins at Evergreen University.</p>
+          <div class="uni-hero-actions"><a class="uni-button uni-button-gold" href="#academics">Explore our programs <span aria-hidden="true">↗</span></a><a class="uni-text-link uni-light-link" href="admission.html">Undergraduate admissions <span aria-hidden="true">→</span></a></div>
+          <div class="uni-hero-detail"><span>EST. 1968</span><span class="detail-rule"></span><span>LEARN WITH PURPOSE</span></div>
+        </div>
+        <div class="uni-hero-image" role="img" aria-label="Students walking through a university campus courtyard"><div class="hero-image-caption"><span>EVERGREEN CAMPUS</span><span>01 — 04</span></div></div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+    <section class="uni-stat-band" aria-label="Evergreen University at a glance"><div class="uni-container stat-layout"><div><strong>4</strong><span>distinct faculties</span></div><div><strong>14</strong><span>undergraduate programs</span></div><div><strong>18:1</strong><span>student–faculty ratio</span></div><div><strong>1968</strong><span>a legacy of learning</span></div></div></section>
+
+    <section class="uni-section academics-section" id="academics">
+      <div class="uni-container">
+        <div class="uni-section-heading"><div><div class="uni-kicker uni-kicker-green">LEARN WITH PURPOSE</div><h2>Knowledge that<br>moves the <em>world forward.</em></h2></div><p>Four faculties. Boundless questions. Explore an academic community built around curiosity, rigorous thinking, and the good you can do with what you learn.</p></div>
+        <div class="faculty-grid" id="faculty-grid">
+          <a class="faculty-card faculty-card-engineering" href="faculty-engineering.html"><span class="faculty-index">01 / FACULTY</span><span class="faculty-symbol" aria-hidden="true">⌁</span><h3>Engineering</h3><p>Design resilient systems and build a more sustainable future.</p><span class="faculty-program-count">3 UNDERGRADUATE PROGRAMS</span><span class="faculty-arrow" aria-hidden="true">↗</span></a>
+          <a class="faculty-card faculty-card-computing" href="faculty-computer-science.html"><span class="faculty-index">02 / FACULTY</span><span class="faculty-symbol" aria-hidden="true">⌘</span><h3>Computer Science</h3><p>Shape the technologies and ideas defining tomorrow.</p><span class="faculty-program-count">3 UNDERGRADUATE PROGRAMS</span><span class="faculty-arrow" aria-hidden="true">↗</span></a>
+          <a class="faculty-card faculty-card-business" href="faculty-business.html"><span class="faculty-index">03 / FACULTY</span><span class="faculty-symbol" aria-hidden="true">↗</span><h3>Business Administration</h3><p>Lead organizations with purpose and a global perspective.</p><span class="faculty-program-count">4 UNDERGRADUATE PROGRAMS</span><span class="faculty-arrow" aria-hidden="true">↗</span></a>
+          <a class="faculty-card faculty-card-law" href="faculty-law.html"><span class="faculty-index">04 / FACULTY</span><span class="faculty-symbol" aria-hidden="true">§</span><h3>Law</h3><p>Explore the principles that shape a just society.</p><span class="faculty-program-count">4 UNDERGRADUATE PROGRAMS</span><span class="faculty-arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faculty-footnote"><span>14 PROGRAMS · ONE CURIOUS COMMUNITY</span><a class="uni-text-link" href="admission.html">Find your program <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="uni-story" id="about">
+      <div class="uni-container story-layout">
+        <div class="story-image" role="img" aria-label="Students studying together in a university library"><span>LEARN TOGETHER. GO FURTHER.</span></div>
+        <div class="story-copy"><div class="uni-kicker uni-kicker-green">A PLACE TO BECOME</div><h2>Big ideas need<br>room to <em>grow.</em></h2><p>At Evergreen, education is more than what happens in a lecture hall. It’s a community of people who challenge assumptions, share perspectives, and turn knowledge into meaningful action.</p><p>Our faculty pair academic foundations with hands-on learning—so you graduate ready to contribute, adapt, and keep asking better questions.</p><a class="uni-text-link" href="#campus">Discover Evergreen <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="uni-section admissions-section" id="admissions">
+      <div class="uni-container admissions-banner"><div><div class="uni-kicker">YOUR NEXT CHAPTER</div><h2>Ready to make<br>your mark?</h2><p>Start your application and take the first step toward joining our university community.</p></div><div class="admissions-steps"><div><span>01</span><p>Create your student account</p></div><div><span>02</span><p>Choose your faculty and program</p></div><div><span>03</span><p>Submit and track your application</p></div><a class="uni-button uni-button-gold" href="admission.html">Start your application <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="uni-campus" id="campus"><div class="uni-container campus-layout"><div><div class="uni-kicker uni-kicker-green">MORE THAN A DEGREE</div><h2>A community<br>to call <em>your own.</em></h2></div><p>Find your people in student societies, research teams, campus events, and the everyday conversations that make university unforgettable. There’s always something new to discover at Evergreen.</p><a class="uni-text-link" href="create-account.html">Join our community <span aria-hidden="true">→</span></a></div></section>
+  </main>
+  <footer class="uni-footer"><div class="uni-container footer-top"><a class="uni-brand uni-brand-footer" href="index.html"><span class="uni-crest" aria-hidden="true">E</span><span>EVERGREEN<small>UNIVERSITY</small></span></a><div class="footer-links"><a href="#academics">Academics</a><a href="admission.html">Admissions</a><a href="dashboard.html">Student dashboard</a><a href="admin.html">Administration</a></div><a class="footer-email" href="mailto:admissions@evergreen.example.edu">admissions@evergreen.example.edu</a></div><div class="uni-container footer-bottom"><span>© 2026 Evergreen University</span><span>Knowledge for a changing world.</span><a href="login.html">Student &amp; staff login ↗</a></div></footer>
+</body>
+</html>

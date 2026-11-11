@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a student account at Evergreen University.">
+  <meta name="theme-color" content="#f5f6f2"><title>Create a student account — Evergreen University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="university.css"><script src="i18n.js" defer></script><script src="account.js" defer></script>
+</head>
+<body><header class="uni-header"><div class="uni-container header-layout"><a class="uni-brand" href="index.html"><span class="uni-crest">E</span><span>EVERGREEN<small>UNIVERSITY</small></span></a><div class="uni-header-actions"><a class="uni-login" href="index.html">University home</a><a class="uni-button uni-button-gold" href="login.html">Log in</a></div></div></header>
+<main class="auth-page"><section class="auth-card"><div class="uni-kicker uni-kicker-green">JOIN THE EVERGREEN COMMUNITY</div><h1>Create your<br><em>student account.</em></h1><p class="auth-intro">Set up your account to start an application and follow your admissions progress.</p>
+  <form id="signup-form" class="uni-form"><div class="uni-form-grid"><label>First name<input name="firstName" autocomplete="given-name" required maxlength="60"></label><label>Last name<input name="lastName" autocomplete="family-name" required maxlength="60"></label></div><label>Email address<input name="email" type="email" autocomplete="email" required maxlength="254"></label><label>Password<input name="password" type="password" autocomplete="new-password" minlength="10" maxlength="256" required aria-describedby="password-note"></label><span id="password-note" class="input-note">Use at least 10 characters. Your password is securely hashed before it is stored.</span><button class="uni-button uni-button-dark uni-form-submit" type="submit">Create account <span aria-hidden="true">↗</span></button><p class="form-feedback" id="form-message" role="status" aria-live="polite"></p></form>
+  <p class="auth-switch">Already registered? <a href="login.html">Log in to your account</a></p></section></main>
+<footer class="uni-footer"><div class="uni-container footer-bottom"><a href="index.html">← Evergreen University</a><span>Secure student account access</span></div></footer></body></html>

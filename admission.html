@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to an Evergreen University faculty and undergraduate program.">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>Undergraduate admission — Evergreen University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="university.css"><script src="i18n.js" defer></script><script src="university.js" defer></script><script src="account.js" defer></script>
+</head>
+<body>
+  <header class="uni-header"><div class="uni-container header-layout"><a class="uni-brand" href="index.html"><span class="uni-crest">E</span><span>EVERGREEN<small>UNIVERSITY</small></span></a><nav class="uni-nav uni-nav-static"><a href="index.html#academics">Academics</a><a href="index.html#admissions">Admissions</a><a href="dashboard.html">Student dashboard</a></nav><div class="uni-header-actions"><a class="uni-login" href="login.html">Log in</a><a class="uni-button uni-button-gold" href="create-account.html">Create account</a></div></div></header>
+  <main class="form-page" id="admission-page">
+    <section class="page-intro"><div class="uni-container"><div class="uni-kicker uni-kicker-green">UNDERGRADUATE ADMISSIONS · 2026</div><h1>Your future<br>starts <em>here.</em></h1><p>Tell us about yourself and choose the faculty and program you’re ready to explore.</p></div></section>
+    <div class="uni-container admission-layout">
+      <form class="uni-form admission-uni-form" id="admission-form">
+        <div class="login-required" id="login-required" hidden><div class="uni-kicker">STUDENT ACCOUNT REQUIRED</div><p>Please <a href="login.html">log in</a> or <a href="create-account.html">create your student account</a> before completing your admission application.</p></div>
+        <fieldset><legend><span>01</span> Personal information</legend><div class="uni-form-grid">
+          <label>First name<input name="firstName" autocomplete="given-name" required maxlength="60"></label>
+          <label>Last name<input name="lastName" autocomplete="family-name" required maxlength="60"></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" required readonly></label>
+          <label>Phone number<input name="phone" type="tel" autocomplete="tel" required maxlength="30"></label>
+          <label>Date of birth<input name="dateOfBirth" type="date" autocomplete="bday" required></label>
+          <label>Country of residence<input name="country" autocomplete="country-name" required maxlength="80"></label>
+          <label class="full-field">Home address<input name="address" autocomplete="street-address" required maxlength="200"></label>
+        </div></fieldset>
+        <fieldset><legend><span>02</span> Academic background</legend><div class="uni-form-grid">
+          <label>Highest level of education<select name="education" required><option value="">Select your education</option><option>Secondary school</option><option>High school diploma</option><option>Associate degree</option><option>Bachelor’s degree</option><option>Master’s degree</option><option>Other</option></select></label>
+          <label>Most recent school or institution<input name="school" required maxlength="120"></label>
+        </div></fieldset>
+        <fieldset><legend><span>03</span> Your program</legend><div class="uni-form-grid">
+          <label>Preferred faculty<select id="faculty-select" name="faculty" required><option value="">Loading faculties…</option></select></label>
+          <label>Academic program<select id="program-select" name="program" required disabled><option value="">Select a faculty first</option></select></label>
+          <label class="full-field">Faculty admission requirements<ul id="admission-requirements" class="inline-requirements"><li>Select a faculty to see its admission requirements.</li></ul></label>
+          <label class="full-field">Preferred start period<select name="startTerm" required><option value="">Select a start period</option><option>Fall 2026</option><option>Winter 2027</option><option>Spring 2027</option><option>Fall 2027</option><option>Next available intake</option></select></label>
+          <label class="full-field">Personal statement <span class="optional-note">Optional · 800 characters maximum</span><textarea name="statement" rows="5" maxlength="800" placeholder="Tell us what you hope to learn and how you’ll contribute to the Evergreen community."></textarea></label>
+        </div></fieldset>
+        <label class="uni-consent"><input type="checkbox" name="consent" required><span>I confirm that the information provided is accurate and consent to its use for reviewing my application.</span></label>
+        <button class="uni-button uni-button-dark uni-form-submit" type="submit">Submit application <span aria-hidden="true">↗</span></button>
+        <p class="form-feedback" id="form-message" role="status" aria-live="polite"></p>
+        <p class="privacy-note">Your application is stored in the university database and can be accessed by authorized admissions staff.</p>
+      </form>
+      <aside class="admission-aside"><div class="aside-card"><div class="uni-kicker uni-kicker-green">APPLICATION CHECKLIST</div><h2>Before you begin.</h2><ol><li>Create your Evergreen student account.</li><li>Review the requirements for your faculty.</li><li>Choose your degree program.</li><li>Submit your details to the admissions team.</li></ol><p>You can check your application status at any time from your <a href="dashboard.html">student dashboard</a>.</p></div><div class="aside-card aside-requirements"><span class="aside-icon">✳</span><strong>One application.</strong><p>Explore all four faculties and 14 undergraduate programs.</p><a href="index.html#academics">Browse faculties →</a></div></aside>
+    </div>
+  </main>
+  <footer class="uni-footer"><div class="uni-container footer-bottom"><a href="index.html">← Evergreen University</a><span>Office of Undergraduate Admissions</span></div></footer>
+</body>
+</html>
